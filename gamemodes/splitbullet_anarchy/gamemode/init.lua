@@ -1,0 +1,21 @@
+/*
+	Copyright (c) 2021 TidalDevs
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+*/
+
+include("sv_split.lua")
+include("shared.lua")
+AddCSLuaFile("shared.lua")
+AddCSLuaFile("cl_init.lua")
+
+// Set the player as split personality 1 when they spawn.
+hook.Add("PlayerSpawn", "SplitBullet.Server.PlayerSpawn", function(player, transition)
+	hook.Run("SetSplitPersonality", player, 1)
+end)

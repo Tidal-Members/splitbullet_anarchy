@@ -1,0 +1,7 @@
+"Gamemode"
+{
+	"title"			"Split Bullet: Anarchy"
+	"base"			"splitbullet_core"
+	"maps"		"^sba_"
+	"menusystem" 	"1"
+}
