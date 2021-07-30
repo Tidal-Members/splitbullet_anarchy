@@ -4,4 +4,5 @@
 	"base"			"splitbullet_core"
 	"maps"		"^sba_"
 	"menusystem" 	"1"
+	"workshopid"	"2561414700"
 }
